@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+
+	<head>
+		<!-- Meta stuff -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="description" content="Site description goes here.">
+		<meta name="keywords" content="Keywords go here." /> 
+
+		<!-- Title -->
+		<title>{% block page_title %}Index{% endblock page_title %}</title>
+
+		<!-- 960.gs CSS -->
+		<link rel="stylesheet" href="/static/css/lib/reset.css" type="text/css">
+		<link rel="stylesheet" href="/static/css/lib/text.css" type="text/css">
+		<link rel="stylesheet" href="/static/css/lib/960.css" type="text/css">
+
+		<!-- Local CSS -->
+		<link rel="stylesheet" href="/static/css/screen.css" type="text/css">
+		{% block extra_css %}{% endblock extra_css %}
+
+		<!-- Local JS -->
+		<script type='text/javascript' src='/static/js/lib/jquery.min.js'></script>
+		{% block extra_js %}{% endblock extra_js %}
+	</head>
+
+	<body>
+		<!-- Container -->
+		<div class="container_12" id="container">
+
+			<!-- Header -->
+			<div class="grid_12" id="header">
+				<h1>Header</h1>
+			</div>
+			
+			<!-- Content -->
+			<div class="grid_9 alpha" id="content">
+				{% block content %}
+				<p>Content.</p>
+				{% endblock content %}
+			</div>
+			
+			<!-- Sidebar -->
+			<div class="grid_3 omega" id="sidebar">
+				{% block sidebar %}
+				<p>Sidebar.</p>
+				{% endblock help %}
+			</div>
+			
+			<!-- Footer -->
+			<div class="grid_12" id="footer">
+				<p>Footer.</p>
+			</div>
+			
+		</div>
+	</body>
+	
+</html>

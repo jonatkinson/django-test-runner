@@ -1,0 +1,7 @@
+Fabric
+Django
+flup
+ipython
+MySQL-python
+docutils
+ipdb

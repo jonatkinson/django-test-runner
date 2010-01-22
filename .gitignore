@@ -1,0 +1,14 @@
+.DS_Store
+._*
+setuptools-0.6c9-py2.5.egg
+.Python
+bin/
+build/
+include/
+lib/
+share/
+src/
+*.pyc
+fcgi.pid
+pip-log.txt
+.coverage
