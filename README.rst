@@ -9,7 +9,7 @@ Usage
 
 #. Checkout the repository
 
-	git://github.com/jonatkinson/yasnippet-django.git
+	git@github.com:jonatkinson/project-base.git
 
 #. Rename the top level folder as appropriate for the name of your project.
 
