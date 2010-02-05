@@ -1,0 +1,12 @@
+<h1>Django Test Runner</h1>
+
+{% block content %}
+
+<form action="{% url test_run %}" method="post" accept-charset="utf-8">
+	{% for app in installed_apps %}
+	<p><input type="checkbox" name="apps" value="{{ forloop.counter0 }}" id="" checked="checked"><label for="">{{ app }}</label></p>
+	{% endfor %}
+	<p><input type="submit" value="Continue &rarr;"></p>
+</form>
+	
+{% endblock content %}
